@@ -16,7 +16,8 @@ int main()
 		{
 			int tmpDbgFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
 			tmpDbgFlag j = _CRTDBG_LEAK_CHECK_DF;
-			_CrtSetDbgFlag(tmpDbgFlag);
+			_CrtSetDbgFlag(tmpDbgFlag);
+
 
 			g_pApp->m_Options.Init("PlayerOptions.xml", lpCmdLine);
 

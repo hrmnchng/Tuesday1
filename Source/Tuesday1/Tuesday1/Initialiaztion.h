@@ -87,12 +87,12 @@ private:
 		DWORD type = REG_DWORD;
 		HKEY hKey;
 		// open the key where the proc speed is hidden:
-		long lError = RegOpenKeyEx(HKEY_LOCAL_MACHINE,L"HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0", 0,
+		long lError = RegOpenKeyEx(HKEY_LOCAL_MACHINE,"HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0", 0,
 			KEY_READ, &hKey);
 		if (lError == ERROR_SUCCESS)
 		{
 			// query the key:
-			RegQueryValueEx(hKey, L"MHz", NULL, &type, (LPBYTE)
+			RegQueryValueEx(hKey, "MHz", NULL, &type, (LPBYTE)
 				&dwMHz, &BufSize);
 		}
 		return dwMHz;
