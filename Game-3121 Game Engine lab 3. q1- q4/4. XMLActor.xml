@@ -1,0 +1,23 @@
+<Actor>
+	<CubePhysicsComponent>
+		<InitialTransform>
+			<Position x=“1.38” y=“10.21” z=“-2.88”/>
+			<Rotation x=“3.46” y=“355.7” z=“204.33”/>
+		</InitialTransform>
+		<Shape>
+			<Dimensions x=“7” y=“7” z=“2”/>
+		</Shape>
+		
+		<PhysicsMaterial>None</PhysicsMaterial>
+		<RigidBody>
+			<Mass =“7.2”/>
+			<Drag =“0.0”/>
+			<AngularDrag =“0.05”/>
+			<UseGravity =“True”/>
+			<IsKinematic =False/>
+			<Interpolate>None</Interpolate>
+			<CollisionDetection>Continuous</CollisionDetection>
+		</RigidBody>
+	</CubePhysicsComponent>
+	
+</Actor>

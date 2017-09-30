@@ -12,7 +12,6 @@ int main()
 		LPWSTR lpCmdLine,
 		int nCmdShow
 	)
-
 		{
 			int tmpDbgFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
 			tmpDbgFlag j = _CRTDBG_LEAK_CHECK_DF;
